@@ -7,34 +7,53 @@
     <title>Curriculum</title>
   </head>
   <body>
-    <h1>Curriculum</h1>
-    <p>
-      <b>Nome: </b>Niccolò <br>
-      <b>Cognome: </b>Vianello <br>
-      <b>Data di nascita: </b>30-06-1997<br>
-      <b>Luogo di nascita: </b>Torino<br>
-    </p>
-    <p>
-      <b>Titolo di studio: </b>Diploma di liceo scientifico conseguito con 95/100<br>
-    </p>
+    <header class="col-12">
+      Curriculum
+    </header>
 
-    <b><a href="HomePage.html" class="link">Home page </a></b>
-    <b><a href="libretto.html" class="link">Libretto </a></b>
+    <nav class="row">
+        <div class="col-3 navitem"><a href="p1.html">pag.1</a></div>
+        <div class="col-3 navitem"><a href="p2.html">pag.2</a></div>
+        <div class="col-3 navitem"><a href="p3.html">pag.3</a></div>
+        <div class="col-3 navitem"><a href="p4.html">pag.4</a></div>
+      </nav>
 
-    <figure>
-      <img src="html5.png" alt="html5_logo" width="40" height="40">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" width="30" height="30" alt="Facebook logo " usemap="#fblogo">
-      <img src="https://www.iconfinder.com/icons/1620013/download/png/512" width="30" height="30" alt="Instagram logo" usemap="#iglogo">
+    <main class="row">
 
-      <map name="fblogo">
-        <area shape="rect" coords="0,0,100,100" href="https://www.polito.it/" alt="Profilo facebook"/>
-      </map>
-      <map name="iglogo">
-        <area shape="rect" coords="0,0,100,100" href="https://www.instagram.com/niccolovianello" alt="Profilo instagram">
-      </map>
-    </figure>
+      <div id="menu" class="menu col-2">
+        <li class="title">Menu</li>
+        <li><b><a href="HomePage.html">HomePage </a></b></li>
+        <li><b><a href="libretto.html">Libretto </a></b></li>
+      </div>
+
+      <div id="contenuto" class="col-10">
+        <p>
+          <b>Nome: </b>Niccolò <br>
+          <b>Cognome: </b>Vianello <br>
+          <b>Data di nascita: </b>30-06-1997<br>
+          <b>Luogo di nascita: </b>Torino<br>
+        </p>
+        <p>
+          <b>Titolo di studio: </b>Diploma di liceo scientifico conseguito con 95/100<br>
+        </p>
+      </div>
+
+    </main>
 
     <footer>
+
+      <figure>
+        <img src="html5.png" alt="html5_logo" width="40" height="40">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/600px-Facebook_logo_%28square%29.png" width="30" height="30" alt="Facebook logo " usemap="#fblogo">
+        <img src="https://www.iconfinder.com/icons/1620013/download/png/512" width="30" height="30" alt="Instagram logo" usemap="#iglogo">
+
+        <map name="fblogo">
+          <area shape="rect" coords="0,0,100,100" href="https://www.polito.it/" alt="Profilo facebook"/>
+        </map>
+        <map name="iglogo">
+          <area shape="rect" coords="0,0,100,100" href="https://www.instagram.com/niccolovianello" alt="Profilo instagram">
+        </map>
+      </figure>
     Autore: Niccolò Vianello <br>
     e-mail: vianello.niccolo@gmail.com
     </footer>

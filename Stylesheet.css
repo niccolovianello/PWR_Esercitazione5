@@ -1,69 +1,176 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* { box-sizing: border-box; }
+
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media only print{
+  a[href]::after {
+    content: "(" attr(href) ")";
+    font-size: 80%;
+    color: black;
+  }
+  #menu{
+    display: none;
+  }
+  audio{
+    display: none;
+  }
+  #contenuto{
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+[class*="col-"] {
+  float:left; padding:1vw;
+}
+
+.row::after {
+    content:""; clear:both; display: grid;
+  }
+
 body{
   font-family: sans-serif;
   font-size: 15pt;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
+  /*ackground-image:url(https://wallpapercave.com/wp/y0CeSA8.png);*/
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
 h1{
-  text-align: center;
+  text-align: left;
 }
+
+header{
+  text-align: center;
+  font-size: 200%;
+  font-family: sans-serif;
+  font-weight: bold;
+  background-color: wheat;
+}
+
+.title{
+ font-family: sans-serif;
+}
+
+.navitem { text-align: center;
+  margin-left: 0;
+  border: 1px solid red;
+  background-color: palegreen;
+}
+
+#menu{
+  background-color: aqua;
+  list-style: none;
+  /*margin-right: 1em;*/
+}
+
+#contenuto{
+  font-family: Verdana, sans-serif;
+  border: 1px solid red;
+  /*background-color: palegreen;*/
+}
+
+#logo{
+  background-color: blue;
+}
+
 footer{
+  text-align: center;
   font-family: serif;
   font-style: italic;
   font-size: 0.5em;
+  border-top: 3px solid wheat;
+  background-color: lightgrey;
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
+
 .fontvar{
   font-size: 5vw;
 }
+
 a{
-  color: lightblue
+  color: blue;
 }
+
 td{
   text-align: center;
 }
+
 .badexam{
   color: red
 }
+
 .goodexam{
   color: lime
 }
+
 .citazione{
   text-align: center;
   font-style: italic;
   font-family: serif;
-  font-size: 200%;
+  font-size: 75%;
 }
+
 .citazione::after{
   content: "\00A9";
 }
+
+/*
 .citazione:hover{
   font-size: 200%;
   background-color: orange;
   color: blue;
 }
-.citazione:active{
+*/
+
+/*.citazione:active{
   background-color: red;
   color: orange;
-}
+}*/
+
 a:hover{
   color: orange;
   background: purple
 }
+
 a:active{
   background: lime;
 }
+
 .interlineaMaggiore{
   line-height: 2;
 }
+
 table, th, td{
-  border: 1px solid white;
+  border: 1px solid red;
 }
+
 table{
   width: 100%;
 }
+
 /*p::first-letter{
   font-size: 200%;
   font-weight: bold;

@@ -1,0 +1,71 @@
+body{
+  font-family: sans-serif;
+  font-size: 15pt;
+  background-color: black;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+h1{
+  text-align: center;
+}
+footer{
+  font-family: serif;
+  font-style: italic;
+  font-size: 0.5em;
+}
+.fontvar{
+  font-size: 5vw;
+}
+a{
+  color: lightblue
+}
+td{
+  text-align: center;
+}
+.badexam{
+  color: red
+}
+.goodexam{
+  color: lime
+}
+.citazione{
+  text-align: center;
+  font-style: italic;
+  font-family: serif;
+  font-size: 200%;
+}
+.citazione::after{
+  content: "\00A9";
+}
+.citazione:hover{
+  font-size: 200%;
+  background-color: orange;
+  color: blue;
+}
+.citazione:active{
+  background-color: red;
+  color: orange;
+}
+a:hover{
+  color: orange;
+  background: purple
+}
+a:active{
+  background: lime;
+}
+.interlineaMaggiore{
+  line-height: 2;
+}
+table, th, td{
+  border: 1px solid white;
+}
+table{
+  width: 100%;
+}
+/*p::first-letter{
+  font-size: 200%;
+  font-weight: bold;
+  color: yellow;
+}*/
